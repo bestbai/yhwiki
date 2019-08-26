@@ -9,6 +9,7 @@ html,body{ background-color:#777; width:96%; margin:auto;}
 
 a{color:#2F63B3;text-decoration:none;outline-style:none;}a:hover{color:#0040FF;text-decoration:underline;}
 div{ margin:5; padding-left:3px;padding-right:3px; background-color:#EEE; font-size:12px;}
+img{max-width: 100%; height: auto;}
 </style>
 </head>
 
@@ -43,7 +44,7 @@ div{ margin:5; padding-left:3px;padding-right:3px; background-color:#EEE; font-s
             var head=document.getElementsByTagName("head")[0]; //head标签之间加上style样式
             head.appendChild(style); 
 	    }
-	    var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
+	    var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=50); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
 		if(isWeixin){
 			loadHtml();
 			loadStyleText(cssText);
