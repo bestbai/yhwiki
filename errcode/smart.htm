@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+<title>最新消息</title>
+<style>
+html,body{ background-color:#777; width:96%; margin:auto;}
+
+a{color:#2F63B3;text-decoration:none;outline-style:none;}a:hover{color:#0040FF;text-decoration:underline;}
+div{ margin:5; padding-left:3px;padding-right:3px; background-color:#EEE; font-size:12px;}
+img{max-width: 100%; height: auto;}
+</style>
+</head>
+
+<body>
+	<script type="text/javascript">
+		function is_weixin() {
+		    var ua = navigator.userAgent.toLowerCase();
+		    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+		        return true;
+		    } else {
+		        return false;
+		    }
+		}
+		var isWeixin = is_weixin();
+		var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
+		function loadHtml(){
+			var div = document.createElement('div');
+			div.id = 'weixin-tip';
+			div.innerHTML = '<p><img src="live_weixin.png" alt="微信打开"/></p>';
+			document.body.appendChild(div);
+		}
+		
+		function loadStyleText(cssText) {
+	        var style = document.createElement('style');
+	        style.rel = 'stylesheet';
+	        style.type = 'text/css';
+	        try {
+	            style.appendChild(document.createTextNode(cssText));
+	        } catch (e) {
+	            style.styleSheet.cssText = cssText; //ie9以下
+	        }
+            var head=document.getElementsByTagName("head")[0]; //head标签之间加上style样式
+            head.appendChild(style); 
+	    }
+	    var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=50); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
+		if(isWeixin){
+			loadHtml();
+			loadStyleText(cssText);
+		}
+		//document. write(navigator.userAgent);
+	</script>
+<script type="text/javascript">
+        (function() {
+            var s = "_" + Math.random().toString(36).slice(2);
+            document.write('<div style="" id="' + s + '"></div>');
+            (window.slotbydup = window.slotbydup || []).push({
+                id: "u4992248",
+                container: s
+            });
+        })();
+</script>
+<!-- 多条广告如下脚本只需引入一次 -->
+
+	
+<div id="" class="news">
+	<p>服务器过期，无法继续提供激活服务。</p>
+	<p>VIP用户可继续使用VIP激活码，可向我索要激活码。</p>
+	<p>VIP服务。<br>下载SmartTools-release.apk</p>
+	
+
+	<p><a href="https://pan.baidu.com/s/16nMV2yNwHZTW6aKHZTeB_g">百度盘分享链接</a> 提取码: rc5y</p>
+	<p><a href="#">备用下载</a> </p>
+	<p>时时关注最新消息！</p>
+	
+
+</div>
+
+<div>
+	<p><b>新版工具使用方法</b></p>
+
+
+</div>
+<div>
+</div>
+<p>内部信息，请自觉保密！</p>
+
+</body>
+</html>
